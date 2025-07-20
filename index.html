@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="largezce.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Z-C-E: About Us</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="topnav" id="center-align">
+            <span>
+                <a href="index.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="affiliations.html">AFFILIATIONS</a>
+                <a href="joinus.html">JOIN US</a>
+            </span>
+        </div>
+        <h1 id="title">Welcome to the Zerorian Corporation of Economics!</h1>
+        <h2 id="title">The Z-C-E is a Starscape player faction that has one goal: to profit.</h2>
+        <div id="container-flex">
+            <img src="zce.png" id="myImage">
+            <div id="center-align">
+                <p id="text">Since February 2025, the Zerorian Corporation of Economics has been helping its members grow and prosper.
+                We have had tremendous growth, going from 3 members in February 2025 to 25 by July 2025. We are a neutral, supportive faction dedicated to 
+                helping our members grow. We intend to grow into a faction capable of controlling and manipulating the market. Enlist today to become a part of 
+                a wonderful community dedicated to <i>YOU!</i> There is wealth beyond the stars, so join now - the Z-C-E is calling, and together we will reach beyond the stars.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            // Get references to the elements
+            const myImage = document.getElementById('myImage');
+            const myParagraph = document.getElementById('text');
+
+            // Function to add the fade-in class        
+            function fadeInElements() {
+                if (myImage) { // Check if the image element exists
+                    myImage.classList.add('fade-in');
+                }
+                if (myParagraph) { // Check if the paragraph element exists
+                    myParagraph.classList.add('fade-in');
+                }
+            }   
+
+            // Listen for the DOM content to be fully loaded
+            // This ensures the HTML elements exist before the script tries to manipulate them
+            document.addEventListener('DOMContentLoaded', fadeInElements);
+            // Alternative: If you want to wait for ALL assets (images, etc.) to load, use 'load'
+            // window.addEventListener('load', fadeInElements);
+        </script>
+    </body>
+</html>
